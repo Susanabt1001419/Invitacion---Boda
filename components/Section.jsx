@@ -1,5 +1,5 @@
 // components/Section.jsx
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 export default function Section({ children, className = "", id }) {
   return (
@@ -14,3 +14,4 @@ export default function Section({ children, className = "", id }) {
     </section>
   );
 }
+
