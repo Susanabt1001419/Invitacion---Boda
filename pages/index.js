@@ -14,11 +14,6 @@ export default function Home() {
   >
     <source src="/Great Vibes.mp4" type="video/mp4" />
   </video>
-
-  <div className="relative z-10 text-white text-center">
-    <h1 className="font-script text-6xl mb-4">Susana & Diego</h1>
-    <p className="tracking-widest uppercase text-lg">20 de junio de 2026</p>
-  </div>
 </section>
       <Section>
         <p className='italic text-2xl'>“El amor no consiste en mirarse el uno al otro, sino en mirar juntos en la misma dirección.”</p>
