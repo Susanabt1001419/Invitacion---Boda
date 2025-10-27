@@ -17,7 +17,7 @@ export default function Home() {
         <p>📅 Sábado 12 de abril de 2026</p>
         <WeddingCountdown date={weddingDate} />
       </Section>
-      <footer className='py-12 text-sm text-gray-600'>Con amor, Diego & Luisa 💛</footer>
+      <footer className='py-12 text-sm text-gray-600'>Con amor, Susana & Diego 💛</footer>
     </div>
   );
 }
