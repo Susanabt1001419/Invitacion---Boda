@@ -8,10 +8,14 @@ module.exports = {
     extend: {
       fontFamily: {
         serif: ['"Cormorant Garamond"', 'serif'],
-        script: ['"Great Vibes"', 'cursive']
+        script: ['"Great Vibes"', 'cursive'],
+        greatvibes: ['"Great Vibes"', 'cursive'], // para el contador
       },
-      colors: { beige: "#f8f5f0", gold: "#c6a664" }
-    }
+      colors: { beige: "#f8f5f0", gold: "#c6a664" },
+    },
+  },
+  plugins: [],
+};
   },
   plugins: []
 };
