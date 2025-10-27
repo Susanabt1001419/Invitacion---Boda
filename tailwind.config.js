@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+fontFamily: {
+  greatvibes: ['"Great Vibes"', 'cursive'],
+},
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
