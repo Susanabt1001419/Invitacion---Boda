@@ -1,8 +1,9 @@
+// pages/index.js
 import Section from '../components/Section';
 import WeddingCountdown from '../components/Countdown';
 
 export default function Home() {
-  const weddingDate = new Date("2026-02-20T16:00:00-05:00");
+  const weddingDate = new Date('2026-02-20T16:00:00-05:00');
 
   return (
     <div className="min-h-screen bg-beige text-center font-serif">
@@ -18,11 +19,11 @@ export default function Home() {
         >
           <source src="/hero.mp4" type="video/mp4" />
         </video>
-        {/* un pequeño degradado abajo para separar visualmente */}
+        {/* degradado para transición con el fondo beige */}
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-beige/90 to-transparent" />
       </section>
 
-      {/* FECHA DEBAJO DEL VIDEO (pegadita) */}
+      {/* FECHA DEBAJO DEL VIDEO */}
       <Section id="fecha" className="pt-6 pb-4">
         <p className="tracking-[0.35em] uppercase text-black text-base sm:text-lg md:text-xl">
           20 · 02 · 2026
@@ -36,7 +37,7 @@ export default function Home() {
         </p>
       </Section>
 
-      {/* CUENTA REGRESIVA GRANDE */}
+      {/* CUENTA REGRESIVA */}
       <Section id="contador" className="pt-2 pb-4">
         <h3 className="tracking-[0.25em] uppercase text-xs md:text-sm text-gray-700 mb-4">
           Cuenta regresiva
@@ -60,4 +61,3 @@ export default function Home() {
   );
 }
 
-}
