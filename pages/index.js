@@ -1,48 +1,63 @@
 import Section from '../components/Section';
 import WeddingCountdown from '../components/Countdown';
+
 export default function Home() {
   const weddingDate = new Date("2026-02-20T16:00:00-05:00");
+
   return (
-    <div className='min-h-screen bg-beige text-center font-serif'>
-      <section className="relative h-screen flex justify-center items-center bg-black">
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="absolute inset-0 w-full h-full object-cover opacity-90"
-  >
-    <source src="/Great Vibes.mp4" type="video/mp4" />
-  </video>
-  
-      {/* FECHA DEBAJO DEL VIDEO */}
-<Section id="fecha" className="pt-10">
-  <p className="tracking-[0.35em] uppercase text-black text-lg sm:text-xl">
-    20 · 02 · 2026
-  </p>
-  <div className="hr-soft mt-6" />
-</Section>
-  
-</section>
-      <Section>
-        <p className='italic text-2xl'>“El amor no consiste en mirarse el uno al otro, sino en mirar juntos en la misma dirección.”</p>
+    <div className="min-h-screen bg-beige text-center font-serif">
+
+      {/* VIDEO HERO */}
+      <section className="relative h-screen flex items-end bg-black">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-90"
+        >
+          <source src="/Great Vibes.mp4" type="video/mp4" />
+        </video>
+        {/* un pequeño degradado abajo para separar visualmente */}
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-beige/90 to-transparent" />
+      </section>
+
+      {/* FECHA DEBAJO DEL VIDEO (pegadita) */}
+      <Section id="fecha" className="pt-6 pb-4">
+        <p className="tracking-[0.35em] uppercase text-black text-base sm:text-lg md:text-xl">
+          20 · 02 · 2026
+        </p>
       </Section>
-  
-  {/* CUENTA REGRESIVA */}
-<Section id="contador">
-  <h3 className="font-script text-3xl text-gold mb-4">Cuenta regresiva</h3>
-  <div className="flex justify-center">
-    <WeddingCountdown date={weddingDate} />
-  </div>
-</Section>
-  
-      <Section>
-        <h2 className='font-script text-3xl text-gold mb-6'>Nuestra Boda</h2>
-        <p>📍 Torre mar eventos, Rionegro</p>
+
+      {/* FRASE */}
+      <Section className="pt-2 pb-6">
+        <p className="italic text-xl md:text-2xl text-gray-800">
+          “El amor no consiste en mirarse el uno al otro, sino en mirar juntos en la misma dirección.”
+        </p>
+      </Section>
+
+      {/* CUENTA REGRESIVA GRANDE */}
+      <Section id="contador" className="pt-2 pb-4">
+        <h3 className="tracking-[0.25em] uppercase text-xs md:text-sm text-gray-700 mb-4">
+          Cuenta regresiva
+        </h3>
+        <div className="flex justify-center">
+          <WeddingCountdown date={weddingDate} />
+        </div>
+      </Section>
+
+      {/* DETALLES */}
+      <Section className="pt-6">
+        <h2 className="font-script text-3xl text-gold mb-4">Nuestra Boda</h2>
+        <p>📍 Torre Mar Eventos, Rionegro</p>
         <p>📅 Viernes 20 de febrero de 2026</p>
-        <WeddingCountdown date={weddingDate} />
       </Section>
-      <footer className='py-12 text-sm text-gray-600'>Con amor, Susana & Diego 💛</footer>
+
+      <footer className="py-10 text-sm text-gray-600">
+        Con amor, Susana & Diego 💛
+      </footer>
     </div>
   );
+}
+
 }
