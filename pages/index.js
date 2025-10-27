@@ -13,8 +13,8 @@ export default function Home() {
       </Section>
       <Section>
         <h2 className='font-script text-3xl text-gold mb-6'>Nuestra Boda</h2>
-        <p>📍 Hacienda La Toscana, Rionegro</p>
-        <p>📅 Sábado 12 de abril de 2026</p>
+        <p>📍 Torre mar eventos, Rionegro</p>
+        <p>📅 Viernes 20 de febrero de 2026</p>
         <WeddingCountdown date={weddingDate} />
       </Section>
       <footer className='py-12 text-sm text-gray-600'>Con amor, Susana & Diego 💛</footer>
