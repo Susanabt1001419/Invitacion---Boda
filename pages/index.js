@@ -4,10 +4,22 @@ export default function Home() {
   const weddingDate = new Date('2026-04-12T16:00:00-05:00');
   return (
     <div className='min-h-screen bg-beige text-center font-serif'>
-      <section className='h-screen flex flex-col justify-center items-center bg-[url(/hero.jpg)] bg-cover bg-center text-white'>
-        <h1 className='font-script text-6xl mb-4 text-black'>Susana & Diego</h1>
-        <p className='text-xl uppercase tracking-widest text-black'>20 de Febrero de 2026</p>
-      </section>
+      <section className="relative h-screen flex justify-center items-center bg-black">
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="absolute inset-0 w-full h-full object-cover opacity-90"
+  >
+    <source src="/Great Vibes.mp4" type="video/mp4" />
+  </video>
+
+  <div className="relative z-10 text-white text-center">
+    <h1 className="font-script text-6xl mb-4">Susana & Diego</h1>
+    <p className="tracking-widest uppercase text-lg">20 de junio de 2026</p>
+  </div>
+</section>
       <Section>
         <p className='italic text-2xl'>“El amor no consiste en mirarse el uno al otro, sino en mirar juntos en la misma dirección.”</p>
       </Section>
