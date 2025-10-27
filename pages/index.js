@@ -16,7 +16,7 @@ export default function Home() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover opacity-90"
         >
-          <source src="/Great Vibes.mp4" type="video/mp4" />
+          <source src="/hero.mp4" type="video/mp4" />
         </video>
         {/* un pequeño degradado abajo para separar visualmente */}
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-beige/90 to-transparent" />
