@@ -11,6 +11,7 @@ function Block({ value, label }) {
       <div className="text-7xl sm:text-8xl md:text-9xl font-greatvibes text-gray-800 leading-none">
         {value}
       </div>
+
       {/* ETIQUETAS → estilo original */}
       <div className="mt-2 text-[10px] sm:text-xs tracking-widest uppercase text-gray-700">
         {label}
