@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <div className='min-h-screen bg-beige text-center font-serif'>
       <section className='h-screen flex flex-col justify-center items-center bg-[url(/hero.jpg)] bg-cover bg-center text-white'>
-        <h1 className='font-script text-6xl mb-4'>Diego & Luisa</h1>
-        <p className='text-xl uppercase tracking-widest'>12 de abril de 2026</p>
+        <h1 className='font-script text-6xl mb-4 text-black'>Susana & Diego</h1>
+        <p className='text-xl uppercase tracking-widest'>20 de Febrero de 2026</p>
       </section>
       <Section>
         <p className='italic text-2xl'>“El amor no consiste en mirarse el uno al otro, sino en mirar juntos en la misma dirección.”</p>
