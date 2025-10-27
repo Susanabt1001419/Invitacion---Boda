@@ -1,5 +1,7 @@
 // components/Countdown.jsx
-import Countdown, { zeroPad } from 'react-countdown';
+import Countdown from "react-countdown";
+
+const zpad = (n) => String(n).padStart(2, "0");
 
 function Block({ value, label }) {
   return (
@@ -21,17 +23,16 @@ export default function WeddingCountdown({ date }) {
     }
     return (
       <div className="flex items-end justify-center">
-        <Block value={zeroPad(days)} label="DÍAS" />
+        <Block value={zpad(days)} label="DÍAS" />
         <div className="text-4xl sm:text-5xl md:text-6xl mx-1 md:mx-2">:</div>
-        <Block value={zeroPad(hours)} label="HORAS" />
+        <Block value={zpad(hours)} label="HORAS" />
         <div className="text-4xl sm:text-5xl md:text-6xl mx-1 md:mx-2">:</div>
-        <Block value={zeroPad(minutes)} label="MINUTOS" />
+        <Block value={zpad(minutes)} label="MINUTOS" />
         <div className="text-4xl sm:text-5xl md:text-6xl mx-1 md:mx-2">:</div>
-        <Block value={zeroPad(seconds)} label="SEGUNDOS" />
+        <Block value={zpad(seconds)} label="SEGUNDOS" />
       </div>
     );
   };
 
-  // React-Countdown ya refresca cada segundo por defecto
   return <Countdown date={date} renderer={renderer} />;
 }
