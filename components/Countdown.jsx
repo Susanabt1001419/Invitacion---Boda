@@ -26,7 +26,7 @@ export default function WeddingCountdown({ date }) {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) return <span className="text-xl">¡Es hoy! 💍</span>;
     return (
-      <div className="flex justify-center items-end">
+      <div className="flex justify-center items-end px-4 sm:px-8 scale-90 sm:scale-95">
         <Block value={zpad(days)} label="DÍAS" />
         <div className="text-4xl mx-2 text-gray-700">:</div>
         <Block value={zpad(hours)} label="HORAS" />
