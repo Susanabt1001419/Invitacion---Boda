@@ -7,10 +7,11 @@ const zpad = (n) => String(n).padStart(2, '0');
 function Block({ value, label }) {
   return (
     <div className="mx-3 sm:mx-4 text-center">
-      {/* NÚMEROS → Great Vibes */}
-      <div className="text-7xl sm:text-8xl md:text-9xl font-greatvibes text-gray-800 leading-none">
+      {/* NÚMEROS → elegantes tipo serif */}
+      <div className="text-5xl sm:text-6xl md:text-7xl font-serif font-medium text-gray-800 leading-none tracking-wide">
         {value}
       </div>
+
 
       {/* ETIQUETAS → estilo original */}
       <div className="mt-2 text-[10px] sm:text-xs tracking-widest uppercase text-gray-700">
