@@ -101,14 +101,19 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <div className="flex flex-col items-center">
-              {/* COPAS DORADAS CRUZADAS */}
+              {/* COPAS CON CORAZÓN */}
               <svg xmlns="http://www.w3.org/2000/svg" 
                   viewBox="0 0 64 64" 
                   className="w-14 h-14 mb-4" 
-                  fill="none" stroke="#c6a664" 
-                  strokeWidth="2">
-                <path d="M20 12l8 16m16-16l-8 16M16 12h12l4 12H20l-4-12Zm32 0H36l-4 12h12l4-12ZM28 40l-8 12m16-12l8 12m-8-12v12m-8-12v12" strokeLinecap="round" strokeLinejoin="round"/>
+                  fill="none" 
+                  stroke="#c6a664" 
+                  strokeWidth="1.8">
+                <path d="M22 10l3 14c1.5 6 8.5 6 10 0l3-14H22Z" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M38 10l3 14c1.5 6 8.5 6 10 0l3-14H38Z" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M30 34l2 2 2-2a3 3 0 0 0-4 0Z" fill="#c6a664"/>
+                <path d="M32 36v10m-8 0h16" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
+
 
               <h3 className="font-script text-2xl text-gray-800 mb-1">Recepción</h3>
               <h4 className="text-lg font-semibold tracking-wide text-gray-800">
