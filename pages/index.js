@@ -101,14 +101,14 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <div className="flex flex-col items-center">
-              {/* COPAS DE BRINDIS DORADAS */}
+              {/* COPAS MINIMAL GOLD */}
               <svg xmlns="http://www.w3.org/2000/svg" 
                   viewBox="0 0 64 64" 
                   className="w-14 h-14 mb-4" 
                   fill="none" stroke="#c6a664" 
                   strokeWidth="2">
-                <path d="M18 10l4 18c2 8 12 8 14 0l4-18H18Zm24 0l4 18c2 8 12 8 14 0l4-18H42ZM32 46v10m-8 0h16" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+                <path d="M18 8l4 18c2 8 12 8 14 0l4-18H18Zm24 0l4 18c2 8 12 8 14 0l4-18H42ZM32 46v10m-8 0h16" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
 
               <h3 className="font-script text-2xl text-gray-800 mb-1">Recepción</h3>
               <h4 className="text-lg font-semibold tracking-wide text-gray-800">
