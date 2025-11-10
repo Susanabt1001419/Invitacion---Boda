@@ -64,11 +64,15 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <div className="flex flex-col items-center">
-              {/* 🎯 SVG DE IGLESIA DORADA */}
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                   strokeWidth={1.5} stroke="#c6a664"
-                   className="w-12 h-12 mb-4">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 2v4m0 0l3 2m-3-2L9 8m0 0v4m6-4v4m-6 4v6m6-6v6m-9 0h12M4 20h16M2 12h20" />
+              {/* IGLESIA DORADA ELEGANTE */}
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                  viewBox="0 0 64 64" 
+                  className="w-14 h-14 mb-4" 
+                  fill="none" 
+                  stroke="#c6a664" 
+                  strokeWidth="2">
+               <path d="M32 6v6M26 12h12M16 54V28l16-10 16 10v26M8 54h48M24 54V38h16v16" strokeLinecap="round" strokeLinejoin="round"/>
+                <circle cx="32" cy="24" r="2" fill="#c6a664"/>
               </svg>
 
               <h3 className="font-script text-2xl text-gray-800 mb-1">Ceremonia Religiosa</h3>
