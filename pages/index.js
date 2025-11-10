@@ -75,12 +75,12 @@ export default function Home() {
                 <circle cx="32" cy="24" r="2" fill="#c6a664"/>
               </svg>
 
-              <h3 className="font-script text-2xl text-gray-800 mb-1">Ceremonia Religiosa</h3>
+              <h3 className="font-script text-2xl text-gray-800 mb-1">Ceremonia </h3>
               <h4 className="text-lg font-semibold tracking-wide text-gray-800">
                 Parroquia María Madre de Dios
               </h4>
               <p className="text-sm text-gray-600 mt-1">Rionegro, Antioquia</p>
-              <p className="mt-3 font-medium text-gray-800">5:00 PM</p>
+              <p className="mt-3 font-medium text-gray-800">4:00 PM</p>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Parroquia+Mar%C3%ADa+Madre+de+Dios,+Rionegro,+Antioquia"
                 target="_blank"
@@ -117,7 +117,7 @@ export default function Home() {
                 Galilea Campestre
               </h4>
               <p className="text-sm text-gray-600 mt-1">Rionegro, Antioquia</p>
-              <p className="mt-3 font-medium text-gray-800">7:00 PM</p>
+              <p className="mt-3 font-medium text-gray-800">5:30 PM</p>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Galilea+Campestre,+Rionegro,+Antioquia"
                 target="_blank"
