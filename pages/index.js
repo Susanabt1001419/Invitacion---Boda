@@ -101,12 +101,14 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <div className="flex flex-col items-center">
-              {/* 🥂 ÍCONO DE COPAS DORADAS */}
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                   strokeWidth={1.5} stroke="#c6a664"
-                   className="w-12 h-12 mb-4">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 4.5h9M9 4.5L7.5 9h9L15 4.5M7.5 9c0 3 2.25 5.25 4.5 5.25S16.5 12 16.5 9m-9 9h9m-4.5 0v3m-6 0h12" />
-              </svg>
+              {/* COPAS DE BRINDIS DORADAS */}
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                  viewBox="0 0 64 64" 
+                  className="w-14 h-14 mb-4" 
+                  fill="none" stroke="#c6a664" 
+                  strokeWidth="2">
+                <path d="M18 10l4 18c2 8 12 8 14 0l4-18H18Zm24 0l4 18c2 8 12 8 14 0l4-18H42ZM32 46v10m-8 0h16" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
 
               <h3 className="font-script text-2xl text-gray-800 mb-1">Recepción</h3>
               <h4 className="text-lg font-semibold tracking-wide text-gray-800">
