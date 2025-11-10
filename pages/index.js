@@ -53,6 +53,65 @@ export default function Home() {
         <p>📍 Torre Mar Eventos, Rionegro</p>
         <p>📅 Viernes 20 de febrero de 2026</p>
       </Section>
+      <Section>
+  <h2 className='font-script text-3xl text-gold mb-6'>Nuestra Boda</h2>
+  <p>📍 Torre mar eventos, Rionegro</p>
+  <p>📅 Viernes 20 de febrero de 2026</p>
+  <WeddingCountdown date={weddingDate} />
+</Section>
+
+{/* 💒 NUEVA SECCIÓN: CEREMONIA Y RECEPCIÓN */}
+<Section id="ubicacion" className="bg-beige py-12">
+  <h2 className="font-script text-3xl text-gold mb-8">Ceremonia & Recepción</h2>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 px-6 sm:px-16">
+    {/* CEREMONIA */}
+    <div className="bg-white shadow-md rounded-2xl py-8 px-4 border border-gray-200">
+      <div className="flex flex-col items-center">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2554/2554978.png"
+          alt="Iglesia"
+          className="w-12 mb-4 opacity-80"
+        />
+        <h3 className="font-script text-2xl text-gray-800 mb-1">Ceremonia Religiosa</h3>
+        <h4 className="text-lg font-semibold tracking-wide text-gray-800">Parroquia María Madre de Dios</h4>
+        <p className="text-sm text-gray-600 mt-1">Rionegro, Antioquia</p>
+        <p className="mt-3 font-medium text-gray-800">5:00 PM</p>
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Parroquia+María+Madre+de+Dios,+Rionegro,+Antioquia"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-block bg-gold text-white px-4 py-2 rounded-md hover:bg-yellow-600 transition"
+        >
+          Ver ubicación
+        </a>
+      </div>
+    </div>
+
+    {/* RECEPCIÓN */}
+    <div className="bg-white shadow-md rounded-2xl py-8 px-4 border border-gray-200">
+      <div className="flex flex-col items-center">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2738/2738820.png"
+          alt="Recepción"
+          className="w-12 mb-4 opacity-80"
+        />
+        <h3 className="font-script text-2xl text-gray-800 mb-1">Recepción</h3>
+        <h4 className="text-lg font-semibold tracking-wide text-gray-800">Galilea Campestre</h4>
+        <p className="text-sm text-gray-600 mt-1">Rionegro, Antioquia</p>
+        <p className="mt-3 font-medium text-gray-800">7:00 PM</p>
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Galilea+Campestre,+Rionegro,+Antioquia"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-block bg-gold text-white px-4 py-2 rounded-md hover:bg-yellow-600 transition"
+        >
+          Ver ubicación
+        </a>
+      </div>
+    </div>
+  </div>
+</Section>
 
       <footer className="py-10 text-sm text-gray-600">
         Con amor, Susana & Diego 💛
