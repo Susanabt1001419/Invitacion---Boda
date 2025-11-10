@@ -1,5 +1,4 @@
 // pages/index.js
-// pages/index.js
 import Section from '../components/Section';
 import WeddingCountdown from '../components/Countdown';
 import { motion } from "framer-motion";
@@ -40,7 +39,7 @@ export default function Home() {
         </p>
       </Section>
 
-      {/* ⏳ CUENTA REGRESIVA (espacio reducido) */}
+      {/* ⏳ CUENTA REGRESIVA */}
       <Section id="contador" className="pt-2 pb-2">
         <h3 className="tracking-[0.25em] uppercase text-xs md:text-sm text-gray-700 mb-3">
           Cuenta regresiva
@@ -50,7 +49,7 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* 💒 CEREMONIA Y RECEPCIÓN (menos padding vertical) */}
+      {/* 💒 CEREMONIA Y RECEPCIÓN */}
       <Section id="ubicacion" className="bg-beige py-10">
         <h2 className="font-script text-3xl text-gold mb-8">Ceremonia & Recepción</h2>
 
@@ -65,12 +64,13 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <div className="flex flex-col items-center">
-              {/* Ícono de iglesia */}
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/1198/1198699.png"
-                alt="Iglesia"
-                className="w-14 mb-4 opacity-80"
-              />
+              {/* 🎯 SVG DE IGLESIA DORADA */}
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                   strokeWidth={1.5} stroke="#c6a664"
+                   className="w-12 h-12 mb-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 2v4m0 0l3 2m-3-2L9 8m0 0v4m6-4v4m-6 4v6m6-6v6m-9 0h12M4 20h16M2 12h20" />
+              </svg>
+
               <h3 className="font-script text-2xl text-gray-800 mb-1">Ceremonia Religiosa</h3>
               <h4 className="text-lg font-semibold tracking-wide text-gray-800">
                 Parroquia María Madre de Dios
@@ -97,12 +97,13 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <div className="flex flex-col items-center">
-              {/* Ícono de recepción (copas) */}
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/2738/2738820.png"
-                alt="Recepción"
-                className="w-14 mb-4 opacity-80"
-              />
+              {/* 🥂 ÍCONO DE COPAS DORADAS */}
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                   strokeWidth={1.5} stroke="#c6a664"
+                   className="w-12 h-12 mb-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 4.5h9M9 4.5L7.5 9h9L15 4.5M7.5 9c0 3 2.25 5.25 4.5 5.25S16.5 12 16.5 9m-9 9h9m-4.5 0v3m-6 0h12" />
+              </svg>
+
               <h3 className="font-script text-2xl text-gray-800 mb-1">Recepción</h3>
               <h4 className="text-lg font-semibold tracking-wide text-gray-800">
                 Galilea Campestre
@@ -129,5 +130,3 @@ export default function Home() {
     </div>
   );
 }
-
-
