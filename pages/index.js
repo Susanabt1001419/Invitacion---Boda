@@ -101,17 +101,14 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <div className="flex flex-col items-center">
-              {/* COPAS CON CORAZÓN */}
+              {/* COPAS MINIMAL LUXURY */}
               <svg xmlns="http://www.w3.org/2000/svg" 
                   viewBox="0 0 64 64" 
                   className="w-14 h-14 mb-4" 
                   fill="none" 
                   stroke="#c6a664" 
-                  strokeWidth="1.8">
-                <path d="M22 10l3 14c1.5 6 8.5 6 10 0l3-14H22Z" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M38 10l3 14c1.5 6 8.5 6 10 0l3-14H38Z" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M30 34l2 2 2-2a3 3 0 0 0-4 0Z" fill="#c6a664"/>
-                <path d="M32 36v10m-8 0h16" strokeLinecap="round" strokeLinejoin="round"/>
+                  strokeWidth="2">
+                <path d="M18 10h10v8c0 4-3 8-5 8s-5-4-5-8v-8Zm18 0h10v8c0 4-3 8-5 8s-5-4-5-8v-8ZM23 26v20m18-20v20m-9 0v8m-8 0h16" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
 
 
