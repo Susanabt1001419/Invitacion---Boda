@@ -179,6 +179,48 @@ export default function Home() {
         </motion.div>
       </section>
 
+      {/* 🕰️ PROGRAMA DE LA BODA */}
+      <Section id="programa" className="py-12">
+        <h2 className="font-script text-3xl text-gold mb-10">
+          Programa de la boda
+        </h2>
+      
+        <div className="relative max-w-3xl mx-auto">
+      
+          {/* Línea vertical */}
+          <div className="absolute left-1/2 top-0 h-full w-px bg-gray-300" />
+      
+          {/* ITEM */}
+          {[
+            { time: "4:00 PM", title: "Ceremonia Católica", icon: "⛪" },
+            { time: "5:30 PM", title: "Recepción", icon: "🥂" },
+            { time: "6:30 PM", title: "Cena", icon: "🍽️" },
+            { time: "7:30 PM", title: "Baile de los novios", icon: "💃" },
+            { time: "10:00 PM", title: "Hora loca", icon: "🎉" },
+          ].map((item, i) => (
+            <div
+              key={i}
+              className={`mb-10 flex items-center w-full ${
+                i % 2 === 0 ? "justify-start pr-8" : "justify-end pl-8"
+              }`}
+            >
+              {/* Contenido */}
+              <div className="w-1/2 text-center">
+                <p className="text-sm tracking-widest text-gray-500 mb-1">
+                  {item.time}
+                </p>
+                <p className="font-serif text-lg text-gray-800">
+                  {item.title}
+                </p>
+              </div>
+      
+              {/* Punto central */}
+              <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-gold rounded-full border-4 border-beige" />
+      
+            </div>
+          ))}
+        </div>
+      </Section>
 
       {/* 🌿 FOOTER */}
       <footer className="py-10 text-sm text-gray-600">
