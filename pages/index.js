@@ -155,6 +155,17 @@ export default function Home() {
         </div>
       </Section>
 
+      {/* 📸 FOTO DECORATIVA */}
+      <section className="py-12 px-4 sm:px-12">
+        <div className="max-w-5xl mx-auto">
+          <img
+            src="/foto-final.jpg"
+            alt="Susana y Diego"
+            className="w-full h-auto rounded-2xl shadow-lg object-cover"
+          />
+        </div>
+      </section>
+
       {/* 🌿 FOOTER */}
       <footer className="py-10 text-sm text-gray-600">
         Con amor, Susana & Diego 💛
