@@ -10,16 +10,22 @@ export default function Home() {
     <div className="min-h-screen bg-beige text-center font-serif">
 
       {/* 🌸 VIDEO HERO */}
-      <section className="relative h-[70vh] flex items-end bg-black">
         <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-90"
-        >
-          <source src="/hero.mp4" type="video/mp4" />
-        </video>
+        autoPlay
+        loop
+      muted
+      playsInline
+      className="absolute inset-0 w-full h-full object-cover opacity-90"
+    >
+      <source src="/hero.mp4" type="video/mp4" />
+    </video>
+
+    {/* TEXTO ENCIMA DEL VIDEO */}
+    <div className="relative z-10 text-center px-4">
+      <h1 className="font-script text-4xl sm:text-5xl md:text-6xl text-white tracking-wide drop-shadow-lg">
+        Nuestra boda
+      </h1>
+    </div>
 
         {/* Degradado para transición con el fondo beige */}
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-beige/90 to-transparent" />
