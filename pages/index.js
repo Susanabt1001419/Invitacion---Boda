@@ -159,7 +159,7 @@ export default function Home() {
       <section className="py-12 px-4 sm:px-12">
         <div className="max-w-5xl mx-auto">
           <img
-            src="/foto-final.jpg"
+            src="/Pre_Boda_Susi&Diego_052.jpg"
             alt="Susana y Diego"
             className="w-full h-auto rounded-2xl shadow-lg object-cover"
           />
