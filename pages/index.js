@@ -11,7 +11,7 @@ export default function Home() {
 
       {/* 🖋️ TÍTULO ARRIBA DEL VIDEO */}
       <section className="pt-10 pb-6">
-        <h1 className="font-script text-4xl sm:text-5xl md:text-6xl text-gold tracking-wide">
+        <h1 className="font-script text-4xl sm:text-5xl md:text-6xl text-gray-900 tracking-wide">
           Nuestra boda
         </h1>
       </section>
