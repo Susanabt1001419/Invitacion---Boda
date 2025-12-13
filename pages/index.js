@@ -13,9 +13,9 @@ export default function Home() {
         <video
         autoPlay
         loop
-      muted
-      playsInline
-      className="absolute inset-0 w-full h-full object-cover opacity-90"
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover opacity-90"
     >
       <source src="/hero.mp4" type="video/mp4" />
     </video>
