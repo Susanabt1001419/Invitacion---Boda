@@ -10,7 +10,7 @@ export default function Home() {
     <div className="min-h-screen bg-beige text-center font-serif">
 
       {/* 🌸 VIDEO HERO */}
-        <video
+      <video
         autoPlay
         loop
         muted
