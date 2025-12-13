@@ -9,10 +9,15 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-beige text-center font-serif">
 
-      {/* 🌸 VIDEO HERO */}
-      <section className="relative h-[65vh] sm:h-[70vh] flex items-center justify-center bg-black">
+      {/* 🖋️ TÍTULO ARRIBA DEL VIDEO */}
+      <section className="pt-10 pb-6">
+        <h1 className="font-script text-4xl sm:text-5xl md:text-6xl text-gold tracking-wide">
+          Nuestra boda
+        </h1>
+      </section>
 
-        {/* VIDEO */}
+      {/* 🎬 VIDEO HERO */}
+      <section className="relative h-[65vh] sm:h-[70vh] bg-black">
         <video
           autoPlay
           loop
@@ -22,13 +27,6 @@ export default function Home() {
         >
           <source src="/hero.mp4" type="video/mp4" />
         </video>
-
-        {/* TEXTO ENCIMA DEL VIDEO */}
-        <div className="relative z-10 text-center px-4">
-          <h1 className="font-script text-4xl sm:text-5xl md:text-6xl text-white tracking-wide drop-shadow-lg">
-            Nuestra boda
-          </h1>
-        </div>
 
         {/* DEGRADADO INFERIOR */}
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-beige/90 to-transparent" />
@@ -69,9 +67,9 @@ export default function Home() {
           {/* CEREMONIA */}
           <motion.div
             className="bg-white shadow-md rounded-2xl py-8 px-6 border border-gray-200"
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
             <div className="flex flex-col items-center">
@@ -114,9 +112,9 @@ export default function Home() {
           {/* RECEPCIÓN */}
           <motion.div
             className="bg-white shadow-md rounded-2xl py-8 px-6 border border-gray-200"
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.15 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
             viewport={{ once: true }}
           >
             <div className="flex flex-col items-center">
