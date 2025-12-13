@@ -10,12 +10,12 @@ export default function Home() {
     <div className="min-h-screen bg-beige text-center font-serif">
 
       {/* 🌸 VIDEO HERO */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-90"
+    <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="absolute inset-0 w-full h-full object-cover opacity-90"
     >
       <source src="/hero.mp4" type="video/mp4" />
     </video>
