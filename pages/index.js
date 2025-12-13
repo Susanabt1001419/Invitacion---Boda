@@ -10,28 +10,31 @@ export default function Home() {
     <div className="min-h-screen bg-beige text-center font-serif">
 
       {/* 🌸 VIDEO HERO */}
-    <video
-      autoPlay
-      loop
-      muted
-      playsInline
-      className="absolute inset-0 w-full h-full object-cover opacity-90"
-    >
-      <source src="/hero.mp4" type="video/mp4" />
-    </video>
+      <section className="relative h-[65vh] sm:h-[70vh] flex items-center justify-center bg-black">
 
-    {/* TEXTO ENCIMA DEL VIDEO */}
-    <div className="relative z-10 text-center px-4">
-      <h1 className="font-script text-4xl sm:text-5xl md:text-6xl text-white tracking-wide drop-shadow-lg">
-        Nuestra boda
-      </h1>
-    </div>
+        {/* VIDEO */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-90"
+        >
+          <source src="/hero.mp4" type="video/mp4" />
+        </video>
 
-        {/* Degradado para transición con el fondo beige */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-beige/90 to-transparent" />
+        {/* TEXTO ENCIMA DEL VIDEO */}
+        <div className="relative z-10 text-center px-4">
+          <h1 className="font-script text-4xl sm:text-5xl md:text-6xl text-white tracking-wide drop-shadow-lg">
+            Nuestra boda
+          </h1>
+        </div>
+
+        {/* DEGRADADO INFERIOR */}
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-beige/90 to-transparent" />
       </section>
 
-      {/* 🗓️ FECHA DEBAJO DEL VIDEO */}
+      {/* 🗓️ FECHA */}
       <Section id="fecha" className="pt-6 pb-3">
         <p className="tracking-[0.35em] uppercase text-black text-base sm:text-lg md:text-xl">
           20 · 02 · 2026
@@ -57,10 +60,12 @@ export default function Home() {
 
       {/* 💒 CEREMONIA Y RECEPCIÓN */}
       <Section id="ubicacion" className="bg-beige py-10">
-        <h2 className="font-script text-3xl text-gold mb-8">Ceremonia & Recepción</h2>
+        <h2 className="font-script text-3xl text-gold mb-8">
+          Ceremonia & Recepción
+        </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 px-6 sm:px-16">
-          
+
           {/* CEREMONIA */}
           <motion.div
             className="bg-white shadow-md rounded-2xl py-8 px-6 border border-gray-200"
@@ -70,23 +75,31 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <div className="flex flex-col items-center">
-              {/* IGLESIA DORADA ELEGANTE */}
-              <svg xmlns="http://www.w3.org/2000/svg" 
-                  viewBox="0 0 64 64" 
-                  className="w-14 h-14 mb-4" 
-                  fill="none" 
-                  stroke="#c6a664" 
-                  strokeWidth="2">
-               <path d="M32 6v6M26 12h12M16 54V28l16-10 16 10v26M8 54h48M24 54V38h16v16" strokeLinecap="round" strokeLinejoin="round"/>
+              {/* IGLESIA */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 64 64"
+                className="w-14 h-14 mb-4"
+                fill="none"
+                stroke="#c6a664"
+                strokeWidth="2"
+              >
+                <path d="M32 6v6M26 12h12M16 54V28l16-10 16 10v26M8 54h48M24 54V38h16v16" strokeLinecap="round" strokeLinejoin="round"/>
                 <circle cx="32" cy="24" r="2" fill="#c6a664"/>
               </svg>
 
-              <h3 className="font-script text-2xl text-gray-800 mb-1">Ceremonia </h3>
+              <h3 className="font-script text-2xl text-gray-800 mb-1">
+                Ceremonia
+              </h3>
               <h4 className="text-lg font-semibold tracking-wide text-gray-800">
                 Parroquia María Madre de Dios
               </h4>
-              <p className="text-sm text-gray-600 mt-1">Rionegro, Antioquia</p>
-              <p className="mt-3 font-medium text-gray-800">4:00 PM</p>
+              <p className="text-sm text-gray-600 mt-1">
+                Rionegro, Antioquia
+              </p>
+              <p className="mt-3 font-medium text-gray-800">
+                4:00 PM
+              </p>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Parroquia+Mar%C3%ADa+Madre+de+Dios,+Rionegro,+Antioquia"
                 target="_blank"
@@ -107,23 +120,30 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <div className="flex flex-col items-center">
-              {/* COPAS MINIMAL LUXURY */}
-              <svg xmlns="http://www.w3.org/2000/svg" 
-                  viewBox="0 0 64 64" 
-                  className="w-14 h-14 mb-4" 
-                  fill="none" 
-                  stroke="#c6a664" 
-                  strokeWidth="2">
-                <path d="M18 10h10v8c0 4-3 8-5 8s-5-4-5-8v-8Zm18 0h10v8c0 4-3 8-5 8s-5-4-5-8v-8ZM23 26v20m18-20v20m-9 0v8m-8 0h16" strokeLinecap="round" strokeLinejoin="round"/>
+              {/* COPAS */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 64 64"
+                className="w-14 h-14 mb-4"
+                fill="none"
+                stroke="#c6a664"
+                strokeWidth="2"
+              >
+                <path d="M20 12l8 16m16-16l-8 16M16 12h12l4 12H20l-4-12Zm32 0H36l-4 12h12l4-12ZM28 40l-8 12m16-12l8 12m-8-12v12m-8-12v12" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
 
-
-              <h3 className="font-script text-2xl text-gray-800 mb-1">Recepción</h3>
+              <h3 className="font-script text-2xl text-gray-800 mb-1">
+                Recepción
+              </h3>
               <h4 className="text-lg font-semibold tracking-wide text-gray-800">
                 Galilea Campestre
               </h4>
-              <p className="text-sm text-gray-600 mt-1">Rionegro, Antioquia</p>
-              <p className="mt-3 font-medium text-gray-800">5:30 PM</p>
+              <p className="text-sm text-gray-600 mt-1">
+                Rionegro, Antioquia
+              </p>
+              <p className="mt-3 font-medium text-gray-800">
+                5:30 PM
+              </p>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Galilea+Campestre,+Rionegro,+Antioquia"
                 target="_blank"
@@ -137,10 +157,11 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* 🌿 PIE DE PÁGINA */}
+      {/* 🌿 FOOTER */}
       <footer className="py-10 text-sm text-gray-600">
         Con amor, Susana & Diego 💛
       </footer>
+
     </div>
   );
 }
