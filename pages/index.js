@@ -155,16 +155,30 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* 📸 FOTO DECORATIVA */}
-      <section className="py-12 px-4 sm:px-12">
-        <div className="max-w-5xl mx-auto">
+      {/* 📸 FOTO DECORATIVA + NOTA */}
+      <section className="pt-6 pb-14 px-4 sm:px-12 -mt-6">
+        <motion.div
+          className="max-w-5xl mx-auto text-center"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+      
+          {/* NOTA */}
+          <p className="mb-4 text-xs sm:text-sm tracking-widest uppercase text-gray-600">
+            Para disfrutar plenamente de la celebración, este evento es solo para adultos
+          </p>
+      
+          {/* IMAGEN */}
           <img
             src="/pre_boda_susi_diego_046.jpg"
             alt="Susana y Diego"
             className="w-full h-auto rounded-2xl shadow-lg object-cover"
           />
-        </div>
+        </motion.div>
       </section>
+
 
       {/* 🌿 FOOTER */}
       <footer className="py-10 text-sm text-gray-600">
