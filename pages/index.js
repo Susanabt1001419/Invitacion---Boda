@@ -10,7 +10,7 @@ export default function Home() {
     <div className="min-h-screen bg-beige text-center font-serif">
 
       {/* 🌸 VIDEO HERO */}
-      <section className="relative h-screen flex items-end bg-black">
+      <section className="relative h-[70vh] flex items-end bg-black">
         <video
           autoPlay
           loop
