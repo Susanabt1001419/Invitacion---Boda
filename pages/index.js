@@ -179,74 +179,75 @@ export default function Home() {
         </motion.div>
       </section>
 
-                    {/* 🕰️ PROGRAMA DE LA BODA */}
+      {/* 🕰️ PROGRAMA DE LA BODA */}
       <Section id="programa" className="py-16">
-        <h2 className="font-script text-3xl sm:text-4xl text-gold mb-14">
+        <h2 className="font-script text-3xl sm:text-4xl text-gold mb-16">
           Programa de la boda
         </h2>
       
-        <div className="relative max-w-4xl mx-auto px-6">
+        <div className="relative max-w-5xl mx-auto px-6">
       
           {/* LÍNEA CENTRAL */}
-          <div className="absolute left-1/2 top-0 h-full w-px bg-gray-300 -translate-x-1/2" />
+          <div className="absolute left-1/2 top-0 h-full w-[2px] bg-gray-300 -translate-x-1/2" />
       
-          {/* ITEM 1 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 items-center">
-            <div className="text-right pr-6">
-              <p className="text-2xl font-semibold">Ceremonia Católica</p>
-              <p className="text-xl text-gray-600 mt-1">4:00 PM</p>
-            </div>
-            <div className="flex justify-start pl-6">
-              <img src="/ceremonia.png" alt="Ceremonia" className="w-20" />
-            </div>
-          </div>
+          {/* ITEM */}
+          {[
+            { title: "Ceremonia Católica", time: "4:00 PM", img: "/ceremonia.png", side: "left" },
+            { title: "Recepción", time: "5:30 PM", img: "/recepcion.png", side: "right" },
+            { title: "Cena", time: "6:30 PM", img: "/cena.png", side: "left" },
+            { title: "Baile de los novios", time: "7:30 PM", img: "/baile.png", side: "right" },
+            { title: "Hora loca", time: "10:00 PM", img: "/hora_loca.png", side: "left" },
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="relative grid grid-cols-1 md:grid-cols-2 gap-8 mb-20 items-center"
+            >
       
-          {/* ITEM 2 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 items-center">
-            <div className="flex justify-end pr-6 order-2 md:order-1">
-              <img src="/recepcion.png" alt="Recepción" className="w-20" />
-            </div>
-            <div className="text-left pl-6 order-1 md:order-2">
-              <p className="text-2xl font-semibold">Recepción</p>
-              <p className="text-xl text-gray-600 mt-1">5:30 PM</p>
-            </div>
-          </div>
+              {/* PUNTO DORADO */}
+              <span className="absolute left-1/2 top-1/2 w-3 h-3 bg-gold rounded-full -translate-x-1/2 -translate-y-1/2 z-10" />
       
-          {/* ITEM 3 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 items-center">
-            <div className="text-right pr-6">
-              <p className="text-2xl font-semibold">Cena</p>
-              <p className="text-xl text-gray-600 mt-1">6:30 PM</p>
-            </div>
-            <div className="flex justify-start pl-6">
-              <img src="/cena.png" alt="Cena" className="w-20" />
-            </div>
-          </div>
+              {/* TEXTO IZQUIERDA */}
+              {item.side === "left" && (
+                <div className="text-right pr-12">
+                  <p className="text-xl sm:text-2xl font-medium text-gray-800">
+                    {item.title}
+                  </p>
+                  <p className="text-lg sm:text-xl text-gray-600 mt-1">
+                    {item.time}
+                  </p>
+                </div>
+              )}
       
-          {/* ITEM 4 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 items-center">
-            <div className="flex justify-end pr-6 order-2 md:order-1">
-              <img src="/baile.png" alt="Baile" className="w-20" />
-            </div>
-            <div className="text-left pl-6 order-1 md:order-2">
-              <p className="text-2xl font-semibold">Baile de los novios</p>
-              <p className="text-xl text-gray-600 mt-1">7:30 PM</p>
-            </div>
-          </div>
+              {/* IMAGEN */}
+              <div
+                className={`flex ${
+                  item.side === "left" ? "justify-start pl-12" : "justify-end pr-12"
+                }`}
+              >
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-20 sm:w-24"
+                />
+              </div>
       
-          {/* ITEM 5 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="text-right pr-6">
-              <p className="text-2xl font-semibold">Hora loca</p>
-              <p className="text-xl text-gray-600 mt-1">10:00 PM</p>
-            </div>
-            <div className="flex justify-start pl-6">
-              <img src="/hora_loca.png" alt="Hora loca" className="w-20" />
-            </div>
-          </div>
+              {/* TEXTO DERECHA */}
+              {item.side === "right" && (
+                <div className="text-left pl-12">
+                  <p className="text-xl sm:text-2xl font-medium text-gray-800">
+                    {item.title}
+                  </p>
+                  <p className="text-lg sm:text-xl text-gray-600 mt-1">
+                    {item.time}
+                  </p>
+                </div>
+              )}
       
+            </div>
+          ))}
         </div>
       </Section>
+
 
       {/* 🌿 FOOTER */}
       <footer className="py-10 text-sm text-gray-600">
