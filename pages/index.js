@@ -293,7 +293,7 @@ export default function Home() {
           className="max-w-6xl mx-auto px-6"
         >
           <img
-            src="/collage.jpg"
+            src="/collage.png"
             alt="Susana y Diego"
             className="w-full rounded-3xl shadow-xl object-cover"
           />
