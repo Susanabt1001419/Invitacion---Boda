@@ -284,7 +284,7 @@ export default function Home() {
       </Section>
 
       {/* 📸 COLLAGE CON TRANSICIÓN */}
-      <Section className="py-16 overflow-hidden">
+      <Section className="pt-6 pb-10 overflow-hidden">
         <motion.div
           initial={{ opacity: 0, x: -80 }}       // entra desde la izquierda
           whileInView={{ opacity: 1, x: 0 }}     // se centra
