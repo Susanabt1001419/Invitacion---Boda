@@ -179,57 +179,74 @@ export default function Home() {
         </motion.div>
       </section>
 
-              {/* 🕰️ PROGRAMA */}
-      <Section id="programa" className="py-14">
-        <h2 className="font-script text-3xl sm:text-4xl text-gold mb-12">
+                    {/* 🕰️ PROGRAMA DE LA BODA */}
+      <Section id="programa" className="py-16">
+        <h2 className="font-script text-3xl sm:text-4xl text-gold mb-14">
           Programa de la boda
         </h2>
-
-        <div className="max-w-3xl mx-auto space-y-10 px-6">
-
-          <div className="flex items-center gap-6">
-            <img src="/ceremonia.png" className="w-20" />
-            <div className="text-left">
-              <p className="text-xl sm:text-2xl font-semibold">Ceremonia Católica</p>
-              <p className="text-lg sm:text-xl text-gray-600">4:00 PM</p>
+      
+        <div className="relative max-w-4xl mx-auto px-6">
+      
+          {/* LÍNEA CENTRAL */}
+          <div className="absolute left-1/2 top-0 h-full w-px bg-gray-300 -translate-x-1/2" />
+      
+          {/* ITEM 1 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 items-center">
+            <div className="text-right pr-6">
+              <p className="text-2xl font-semibold">Ceremonia Católica</p>
+              <p className="text-xl text-gray-600 mt-1">4:00 PM</p>
+            </div>
+            <div className="flex justify-start pl-6">
+              <img src="/ceremonia.png" alt="Ceremonia" className="w-20" />
             </div>
           </div>
-
-          <div className="flex items-center gap-6">
-            <img src="/recepcion.png" className="w-20" />
-            <div className="text-left">
-              <p className="text-xl sm:text-2xl font-semibold">Recepción</p>
-              <p className="text-lg sm:text-xl text-gray-600">5:30 PM</p>
+      
+          {/* ITEM 2 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 items-center">
+            <div className="flex justify-end pr-6 order-2 md:order-1">
+              <img src="/recepcion.png" alt="Recepción" className="w-20" />
+            </div>
+            <div className="text-left pl-6 order-1 md:order-2">
+              <p className="text-2xl font-semibold">Recepción</p>
+              <p className="text-xl text-gray-600 mt-1">5:30 PM</p>
             </div>
           </div>
-
-          <div className="flex items-center gap-6">
-            <img src="/cena.png" className="w-20" />
-            <div className="text-left">
-              <p className="text-xl sm:text-2xl font-semibold">Cena</p>
-              <p className="text-lg sm:text-xl text-gray-600">6:30 PM</p>
+      
+          {/* ITEM 3 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 items-center">
+            <div className="text-right pr-6">
+              <p className="text-2xl font-semibold">Cena</p>
+              <p className="text-xl text-gray-600 mt-1">6:30 PM</p>
+            </div>
+            <div className="flex justify-start pl-6">
+              <img src="/cena.png" alt="Cena" className="w-20" />
             </div>
           </div>
-
-          <div className="flex items-center gap-6">
-            <img src="/baile.png" className="w-20" />
-            <div className="text-left">
-              <p className="text-xl sm:text-2xl font-semibold">Baile de los novios</p>
-              <p className="text-lg sm:text-xl text-gray-600">7:30 PM</p>
+      
+          {/* ITEM 4 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 items-center">
+            <div className="flex justify-end pr-6 order-2 md:order-1">
+              <img src="/baile.png" alt="Baile" className="w-20" />
+            </div>
+            <div className="text-left pl-6 order-1 md:order-2">
+              <p className="text-2xl font-semibold">Baile de los novios</p>
+              <p className="text-xl text-gray-600 mt-1">7:30 PM</p>
             </div>
           </div>
-
-          <div className="flex items-center gap-6">
-            <img src="/hora_loca.png" className="w-20" />
-            <div className="text-left">
-              <p className="text-xl sm:text-2xl font-semibold">Hora loca</p>
-              <p className="text-lg sm:text-xl text-gray-600">10:00 PM</p>
+      
+          {/* ITEM 5 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="text-right pr-6">
+              <p className="text-2xl font-semibold">Hora loca</p>
+              <p className="text-xl text-gray-600 mt-1">10:00 PM</p>
+            </div>
+            <div className="flex justify-start pl-6">
+              <img src="/hora_loca.png" alt="Hora loca" className="w-20" />
             </div>
           </div>
-
+      
         </div>
       </Section>
-
 
       {/* 🌿 FOOTER */}
       <footer className="py-10 text-sm text-gray-600">
