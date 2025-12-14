@@ -179,75 +179,109 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* 🕰️ PROGRAMA DE LA BODA */}
-      <Section id="programa" className="py-16">
-        <h2 className="font-script text-3xl sm:text-4xl text-gold mb-16">
+     {/* 🕊️ PROGRAMA DE LA BODA */}
+      <Section className="py-16">
+        <h2 className="font-script text-3xl text-gold mb-14">
           Programa de la boda
         </h2>
       
-        <div className="relative max-w-5xl mx-auto px-6">
+        <div className="relative max-w-3xl mx-auto">
       
           {/* LÍNEA CENTRAL */}
-          <div className="absolute left-1/2 top-0 h-full w-[2px] bg-gray-300 -translate-x-1/2" />
+          <div className="absolute left-1/2 top-0 h-full w-[2px] bg-gray-300 transform -translate-x-1/2"></div>
       
-          {/* ITEM */}
-          {[
-            { title: "Ceremonia Católica", time: "4:00 PM", img: "/ceremonia.png", side: "left" },
-            { title: "Recepción", time: "5:30 PM", img: "/recepcion.png", side: "right" },
-            { title: "Cena", time: "6:30 PM", img: "/cena.png", side: "left" },
-            { title: "Baile de los novios", time: "7:30 PM", img: "/baile.png", side: "right" },
-            { title: "Hora loca", time: "10:00 PM", img: "/hora_loca.png", side: "left" },
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="relative grid grid-cols-1 md:grid-cols-2 gap-8 mb-20 items-center"
-            >
-      
-              {/* PUNTO DORADO */}
-              <span className="absolute left-1/2 top-1/2 w-3 h-3 bg-gold rounded-full -translate-x-1/2 -translate-y-1/2 z-10" />
-      
-              {/* TEXTO IZQUIERDA */}
-              {item.side === "left" && (
-                <div className="text-right pr-12">
-                  <p className="text-xl sm:text-2xl font-medium text-gray-800">
-                    {item.title}
-                  </p>
-                  <p className="text-lg sm:text-xl text-gray-600 mt-1">
-                    {item.time}
-                  </p>
-                </div>
-              )}
-      
-              {/* IMAGEN */}
-              <div
-                className={`flex ${
-                  item.side === "left" ? "justify-start pl-12" : "justify-end pr-12"
-                }`}
-              >
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  className="w-20 sm:w-24"
-                />
-              </div>
-      
-              {/* TEXTO DERECHA */}
-              {item.side === "right" && (
-                <div className="text-left pl-12">
-                  <p className="text-xl sm:text-2xl font-medium text-gray-800">
-                    {item.title}
-                  </p>
-                  <p className="text-lg sm:text-xl text-gray-600 mt-1">
-                    {item.time}
-                  </p>
-                </div>
-              )}
-      
+          {/* ===== CEREMONIA ===== */}
+          <div className="relative flex items-center min-h-[200px]">
+            <div className="w-1/2 text-right pr-14 max-w-[220px] ml-auto">
+              <span className="block text-xl font-medium text-gray-800">
+                Ceremonia<br />Católica
+              </span>
+              <span className="block text-lg text-gray-600 mt-1">
+                4:00 PM
+              </span>
             </div>
-          ))}
+      
+            <span className="absolute left-1/2 w-4 h-4 bg-gold rounded-full transform -translate-x-1/2"></span>
+      
+            <div className="w-1/2 pl-14">
+              <img src="/ceremonia.png" alt="Ceremonia" className="w-20 mx-auto opacity-90" />
+            </div>
+          </div>
+      
+          {/* ===== RECEPCIÓN ===== */}
+          <div className="relative flex items-center min-h-[200px]">
+            <div className="w-1/2 pr-14 flex justify-end">
+              <img src="/recepcion.png" alt="Recepción" className="w-20 opacity-90" />
+            </div>
+      
+            <span className="absolute left-1/2 w-4 h-4 bg-gold rounded-full transform -translate-x-1/2"></span>
+      
+            <div className="w-1/2 pl-14 max-w-[220px]">
+              <span className="block text-xl font-medium text-gray-800">
+                Recepción
+              </span>
+              <span className="block text-lg text-gray-600 mt-1">
+                5:30 PM
+              </span>
+            </div>
+          </div>
+      
+          {/* ===== CENA ===== */}
+          <div className="relative flex items-center min-h-[200px]">
+            <div className="w-1/2 text-right pr-14 max-w-[220px] ml-auto">
+              <span className="block text-xl font-medium text-gray-800">
+                Cena
+              </span>
+              <span className="block text-lg text-gray-600 mt-1">
+                6:30 PM
+              </span>
+            </div>
+      
+            <span className="absolute left-1/2 w-4 h-4 bg-gold rounded-full transform -translate-x-1/2"></span>
+      
+            <div className="w-1/2 pl-14">
+              <img src="/cena.png" alt="Cena" className="w-20 mx-auto opacity-90" />
+            </div>
+          </div>
+      
+          {/* ===== BAILE DE LOS NOVIOS ===== */}
+          <div className="relative flex items-center min-h-[200px]">
+            <div className="w-1/2 pr-14 flex justify-end">
+              <img src="/baile.png" alt="Baile" className="w-20 opacity-90" />
+            </div>
+      
+            <span className="absolute left-1/2 w-4 h-4 bg-gold rounded-full transform -translate-x-1/2"></span>
+      
+            <div className="w-1/2 pl-14 max-w-[220px]">
+              <span className="block text-xl font-medium text-gray-800">
+                Baile de<br />los Novios
+              </span>
+              <span className="block text-lg text-gray-600 mt-1">
+                7:30 PM
+              </span>
+            </div>
+          </div>
+      
+          {/* ===== HORA LOCA ===== */}
+          <div className="relative flex items-center min-h-[200px]">
+            <div className="w-1/2 text-right pr-14 max-w-[220px] ml-auto">
+              <span className="block text-xl font-medium text-gray-800">
+                Hora Loca
+              </span>
+              <span className="block text-lg text-gray-600 mt-1">
+                10:00 PM
+              </span>
+            </div>
+      
+            <span className="absolute left-1/2 w-4 h-4 bg-gold rounded-full transform -translate-x-1/2"></span>
+      
+            <div className="w-1/2 pl-14">
+              <img src="/hora_loca.png" alt="Hora loca" className="w-20 mx-auto opacity-90" />
+            </div>
+          </div>
+      
         </div>
       </Section>
-
 
       {/* 🌿 FOOTER */}
       <footer className="py-10 text-sm text-gray-600">
