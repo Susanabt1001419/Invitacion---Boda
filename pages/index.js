@@ -179,94 +179,54 @@ export default function Home() {
         </motion.div>
       </section>
 
-            {/* 🕰️ PROGRAMA DE LA BODA */}
+              {/* 🕰️ PROGRAMA */}
       <Section id="programa" className="py-14">
-        <h2 className="font-script text-3xl text-gold mb-12">
+        <h2 className="font-script text-3xl sm:text-4xl text-gold mb-12">
           Programa de la boda
         </h2>
-      
-        <div className="relative max-w-4xl mx-auto">
-      
-          {/* Línea vertical */}
-          <div className="absolute left-1/2 top-0 h-full w-px bg-gray-300" />
-      
-          {/* ITEM */}
-          {[
-            {
-              time: "4:00 PM",
-              title: "Ceremonia Católica",
-              icon: (
-                <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none" stroke="#c6a664" strokeWidth="2">
-                  <path d="M32 6v6M26 12h12M16 54V28l16-10 16 10v26M8 54h48M24 54V38h16v16" strokeLinecap="round" strokeLinejoin="round"/>
-                  <circle cx="32" cy="24" r="2" fill="#c6a664"/>
-                </svg>
-              )
-            },
-            {
-              time: "5:30 PM",
-              title: "Recepción",
-              icon: (
-                <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none" stroke="#c6a664" strokeWidth="2">
-                  <path d="M20 10h10v8c0 5-3 9-5 9s-5-4-5-9v-8Zm14 0h10v8c0 5-3 9-5 9s-5-4-5-9v-8ZM23 27v18m18-18v18m-9 0v7m-8 0h16" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              )
-            },
-            {
-              time: "6:30 PM",
-              title: "Cena",
-              icon: (
-                <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none" stroke="#c6a664" strokeWidth="2">
-                  <path d="M16 20h32M16 44h32M20 20v24M44 20v24M26 32h12" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              )
-            },
-            {
-              time: "7:30 PM",
-              title: "Baile de los novios",
-              icon: (
-                <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none" stroke="#c6a664" strokeWidth="2">
-                  <path d="M24 14a4 4 0 1 0 0.01 0ZM40 14a4 4 0 1 0 0.01 0ZM20 54l8-18 8 6 8-6 4 18" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              )
-            },
-            {
-              time: "10:00 PM",
-              title: "Hora loca",
-              icon: (
-                <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none" stroke="#c6a664" strokeWidth="2">
-                  <path d="M32 6v8M6 32h8M50 32h8M14 14l6 6M44 14l-6 6M14 50l6-6M44 50l-6-6" strokeLinecap="round"/>
-                  <circle cx="32" cy="32" r="10"/>
-                </svg>
-              )
-            },
-          ].map((item, i) => (
-            <div
-              key={i}
-              className={`relative mb-14 flex items-center w-full ${
-                i % 2 === 0 ? "justify-start pr-10" : "justify-end pl-10"
-              }`}
-            >
-              <div className="w-1/2 text-center">
-                {/* ICONO */}
-                <div className="flex justify-center mb-3">
-                  {item.icon}
-                </div>
-      
-                {/* HORA */}
-                <p className="text-sm tracking-widest text-gray-500 mb-1">
-                  {item.time}
-                </p>
-      
-                {/* TEXTO */}
-                <p className="font-serif text-lg text-gray-800">
-                  {item.title}
-                </p>
-              </div>
-      
-              {/* Punto central */}
-              <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-gold rounded-full border-4 border-beige" />
+
+        <div className="max-w-3xl mx-auto space-y-10 px-6">
+
+          <div className="flex items-center gap-6">
+            <img src="/ceremonia.png" className="w-20" />
+            <div className="text-left">
+              <p className="text-xl sm:text-2xl font-semibold">Ceremonia Católica</p>
+              <p className="text-lg sm:text-xl text-gray-600">4:00 PM</p>
             </div>
-          ))}
+          </div>
+
+          <div className="flex items-center gap-6">
+            <img src="/recepcion.png" className="w-20" />
+            <div className="text-left">
+              <p className="text-xl sm:text-2xl font-semibold">Recepción</p>
+              <p className="text-lg sm:text-xl text-gray-600">5:30 PM</p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-6">
+            <img src="/cena.png" className="w-20" />
+            <div className="text-left">
+              <p className="text-xl sm:text-2xl font-semibold">Cena</p>
+              <p className="text-lg sm:text-xl text-gray-600">6:30 PM</p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-6">
+            <img src="/baile.png" className="w-20" />
+            <div className="text-left">
+              <p className="text-xl sm:text-2xl font-semibold">Baile de los novios</p>
+              <p className="text-lg sm:text-xl text-gray-600">7:30 PM</p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-6">
+            <img src="/hora_loca.png" className="w-20" />
+            <div className="text-left">
+              <p className="text-xl sm:text-2xl font-semibold">Hora loca</p>
+              <p className="text-lg sm:text-xl text-gray-600">10:00 PM</p>
+            </div>
+          </div>
+
         </div>
       </Section>
 
