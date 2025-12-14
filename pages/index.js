@@ -180,7 +180,7 @@ export default function Home() {
       </section>
 
      {/* 🕊️ PROGRAMA DE LA BODA */}
-      <Section className="py-16">
+      <Section className="py-8">
         <h2 className="font-script text-3xl text-gold mb-14">
           Programa de la boda
         </h2>
