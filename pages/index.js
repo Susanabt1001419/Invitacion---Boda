@@ -283,6 +283,23 @@ export default function Home() {
         </div>
       </Section>
 
+      {/* 📸 COLLAGE CON TRANSICIÓN */}
+      <Section className="py-16 overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, x: -80 }}       // entra desde la izquierda
+          whileInView={{ opacity: 1, x: 0 }}     // se centra
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.4 }} // se activa al hacer scroll
+          className="max-w-6xl mx-auto px-6"
+        >
+          <img
+            src="/collage.jpg"
+            alt="Susana y Diego"
+            className="w-full rounded-3xl shadow-xl object-cover"
+          />
+        </motion.div>
+      </Section>
+
       {/* 🌿 FOOTER */}
       <footer className="py-10 text-sm text-gray-600">
         Con amor, Susana & Diego 💛
