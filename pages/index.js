@@ -350,6 +350,45 @@ export default function Home() {
         </div>
       
       </Section>
+      {/* 🎁 LLUVIA DE SOBRES */}
+      <Section id="regalos" className="pt-6 pb-12">
+      
+        <div className="max-w-xl mx-auto bg-white border border-gray-200 rounded-2xl shadow-md px-6 py-8 text-center">
+      
+          {/* TÍTULO */}
+          <h2 className="font-script text-3xl text-gold mb-4">
+            Detalles
+          </h2>
+      
+          {/* TEXTO */}
+          <p
+            className="
+              max-w-md
+              mx-auto
+              text-gray-800
+              text-sm
+              sm:text-base
+              tracking-widest
+              uppercase
+              leading-relaxed
+              mb-6
+            "
+          >
+            Si desean hacernos algún detalle,
+            agradecemos que sea en forma de lluvia de sobres.
+          </p>
+      
+          {/* IMAGEN */}
+          <img
+            src="/lluvia.jpg"
+            alt="Lluvia de sobres"
+            className="w-full max-w-sm mx-auto rounded-xl object-cover"
+          />
+      
+        </div>
+      
+      </Section>
+
       {/* ✅ CONFIRMACIÓN DE ASISTENCIA */}
       <Section id="rsvp" className="pt-6 pb-12">
       
