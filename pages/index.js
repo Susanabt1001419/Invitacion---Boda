@@ -300,6 +300,38 @@ export default function Home() {
         </motion.div>
       </Section>
 
+      {/* 👗 CÓDIGO DE VESTIMENTA */}
+      <Section className="pt-6 pb-10">
+        <h2 className="font-script text-3xl text-gold mb-4">
+          Código de vestimenta
+        </h2>
+      
+        <p className="text-gray-700 text-base md:text-lg mb-6 max-w-xl mx-auto">
+          Estos colores estarán reservados para los novios, por lo que agradecemos
+          amablemente evitarlos:
+        </p>
+      
+        <div className="flex justify-center gap-12">
+          
+          {/* BLANCO */}
+          <div className="flex flex-col items-center">
+            <span className="w-5 h-5 rounded-full bg-white border border-gray-300 mb-2"></span>
+            <p className="text-sm text-gray-700 tracking-wide uppercase">
+              Blanco
+            </p>
+          </div>
+      
+          {/* BEIGE / CREMA */}
+          <div className="flex flex-col items-center">
+            <span className="w-5 h-5 rounded-full bg-[#f3efe6] border border-gray-300 mb-2"></span>
+            <p className="text-sm text-gray-700 tracking-wide uppercase">
+              Beige / Crema
+            </p>
+          </div>
+      
+        </div>
+      </Section>
+
       {/* 🌿 FOOTER */}
       <footer className="py-10 text-sm text-gray-600">
         Con amor, Susana & Diego 💛
