@@ -301,19 +301,29 @@ export default function Home() {
       </Section>
 
       {/* 👗 CÓDIGO DE VESTIMENTA */}
-      <Section id="vestimenta" className="py-12">
-        
+      <Section id="vestimenta" className="pt-6 pb-10">
+      
         <h2 className="font-script text-3xl text-gold mb-4">
           Código de vestimenta
         </h2>
       
-        <p className="max-w-xl mx-auto text-gray-700 text-base md:text-lg mb-6 leading-relaxed">
-          Con mucho cariño, les pedimos evitar los siguientes colores,
-          ya que estarán reservados para los novios.
+        <p className="
+          max-w-md 
+          mx-auto 
+          text-gray-800 
+          text-sm 
+          sm:text-base 
+          tracking-widest 
+          uppercase 
+          leading-relaxed 
+          mb-6
+        ">
+          Estos colores estarán reservados para los novios,
+          por lo que agradecemos amablemente evitarlos:
         </p>
       
         {/* COLORES PROHIBIDOS */}
-        <div className="flex justify-center items-center gap-2">
+        <div className="flex justify-center items-center gap-1">
           
           {/* BLANCO */}
           <span className="w-14 h-14 rounded-full bg-white border border-gray-300"></span>
@@ -322,9 +332,8 @@ export default function Home() {
           <span className="w-14 h-14 rounded-full bg-[#e3d3bf] border border-gray-300"></span>
       
         </div>
-
-</Section>
-
+      
+      </Section>
 
       {/* 🌿 FOOTER */}
       <footer className="py-10 text-sm text-gray-600">
