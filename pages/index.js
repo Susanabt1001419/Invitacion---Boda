@@ -166,8 +166,22 @@ export default function Home() {
         >
       
           {/* NOTA */}
-          <p className="mb-4 text-xs sm:text-sm tracking-widest uppercase text-gray-600">
-            Para disfrutar plenamente de la celebración, este evento es solo para adultos
+          <p className="
+            max-w-md 
+            mx-auto 
+            mb-5 
+            text-gray-800 
+            text-sm 
+            sm:text-base 
+            tracking-widest 
+            uppercase 
+            leading-relaxed
+          ">
+            <span className="block mb-2 font-semibold text-gray-900">
+              Nota
+            </span>
+            Para disfrutar plenamente de la celebración,
+            este evento es <strong>solo para adultos</strong>
           </p>
       
           {/* IMAGEN */}
@@ -176,8 +190,10 @@ export default function Home() {
             alt="Susana y Diego"
             className="w-full h-auto rounded-2xl shadow-lg object-cover"
           />
+      
         </motion.div>
       </section>
+
 
      {/* 🕊️ PROGRAMA DE LA BODA */}
       <Section className="py-8">
