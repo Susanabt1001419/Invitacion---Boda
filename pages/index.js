@@ -350,6 +350,66 @@ export default function Home() {
         </div>
       
       </Section>
+      {/* ✅ CONFIRMACIÓN DE ASISTENCIA */}
+      <Section id="rsvp" className="pt-8 pb-12">
+      
+        {/* SUBTÍTULO */}
+        <h3
+          className="
+            tracking-[0.3em]
+            uppercase
+            text-xs
+            sm:text-sm
+            text-gray-700
+            mb-4
+          "
+        >
+          Confirmación
+        </h3>
+      
+        {/* TEXTO PRINCIPAL */}
+        <p
+          className="
+            max-w-md
+            mx-auto
+            text-gray-800
+            text-sm
+            sm:text-base
+            leading-relaxed
+            mb-6
+          "
+        >
+          Nos encantaría compartir este día tan especial con ustedes,
+          por lo que agradecemos confirmar su asistencia.
+        </p>
+      
+        {/* BOTÓN */}
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfLTF-SPrQvo_RqEFKqa9jlP_uwxDc1AvXihG2pBUzdE9Sp9w/viewform?usp=dialog"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            inline-block
+            px-8
+            py-3
+            rounded-full
+            border
+            border-gold
+            text-gold
+            tracking-widest
+            uppercase
+            text-xs
+            sm:text-sm
+            hover:bg-gold
+            hover:text-white
+            transition
+          "
+        >
+          Confirmar asistencia
+        </a>
+      
+      </Section>
+
 
       {/* 🌿 FOOTER */}
       <footer className="py-10 text-sm text-gray-600">
