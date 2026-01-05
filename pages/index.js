@@ -301,36 +301,30 @@ export default function Home() {
       </Section>
 
       {/* 👗 CÓDIGO DE VESTIMENTA */}
-      <Section className="pt-6 pb-10">
+      <Section id="vestimenta" className="py-12">
+        
         <h2 className="font-script text-3xl text-gold mb-4">
           Código de vestimenta
         </h2>
       
-        <p className="text-gray-700 text-base md:text-lg mb-6 max-w-xl mx-auto">
-          Estos colores estarán reservados para los novios, por lo que agradecemos
-          amablemente evitarlos:
+        <p className="max-w-xl mx-auto text-gray-700 text-base md:text-lg mb-6 leading-relaxed">
+          Con mucho cariño, les pedimos evitar los siguientes colores,
+          ya que estarán reservados para los novios.
         </p>
       
-        <div className="flex justify-center gap-12">
+        {/* COLORES PROHIBIDOS */}
+        <div className="flex justify-center items-center gap-2">
           
           {/* BLANCO */}
-          <div className="flex flex-col items-center">
-            <span className="w-5 h-5 rounded-full bg-white border border-gray-300 mb-2"></span>
-            <p className="text-sm text-gray-700 tracking-wide uppercase">
-              Blanco
-            </p>
-          </div>
+          <span className="w-14 h-14 rounded-full bg-white border border-gray-300"></span>
       
-          {/* BEIGE / CREMA */}
-          <div className="flex flex-col items-center">
-            <span className="w-5 h-5 rounded-full bg-[#f3efe6] border border-gray-300 mb-2"></span>
-            <p className="text-sm text-gray-700 tracking-wide uppercase">
-              Beige / Crema
-            </p>
-          </div>
+          {/* BEIGE ARENA */}
+          <span className="w-14 h-14 rounded-full bg-[#e3d3bf] border border-gray-300"></span>
       
         </div>
-      </Section>
+
+</Section>
+
 
       {/* 🌿 FOOTER */}
       <footer className="py-10 text-sm text-gray-600">
