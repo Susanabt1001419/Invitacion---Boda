@@ -380,9 +380,15 @@ export default function Home() {
       
           {/* IMAGEN */}
           <img
-            src="/lluvia.jpg"
+            src="/lluvia.png"
             alt="Lluvia de sobres"
-            className="w-full max-w-sm mx-auto rounded-xl object-cover"
+            className="
+              w-full
+              max-w-[120px]
+              mx-auto
+              mt-2
+              object-contain
+            "
           />
       
         </div>
