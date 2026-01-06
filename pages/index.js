@@ -390,7 +390,7 @@ export default function Home() {
             {/* QR */}
             <div className="flex flex-col items-center">
               <img
-                src="/qr.png"
+                src="/qr.jpg"
                 alt="Código QR"
                 className="w-[140px] sm:w-[160px] object-contain rounded-lg border border-gray-200"
               />
