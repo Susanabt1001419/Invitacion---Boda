@@ -464,9 +464,10 @@ export default function Home() {
       </Section>
 
       {/* 🌿 FOOTER */}
-      <footer className="pt-4 pb-10 text-base sm:text-lg text-gray-700 font-serif">
-        Con amor, Susana & Diego 💛
-      </footer>
+     <footer className="pt-2 pb-8 text-base sm:text-lg text-gray-700 font-serif">
+      Con amor, Susana & Diego 💛
+    </footer>
+
 
     </div>
   );
