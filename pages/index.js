@@ -346,7 +346,7 @@ export default function Home() {
           leading-relaxed 
           mb-6
         ">
-          Estos colores estarán reservados para los novios,
+          Vestimenta formal: estos colores estarán reservados para los novios,
           por lo que agradecemos amablemente evitarlos:
         </p>
       
