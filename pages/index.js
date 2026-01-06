@@ -17,15 +17,15 @@ export default function Home() {
         </h1>
       
         <p className="
-          font-serif
-          text-lg
-          sm:text-xl
-          tracking-[0.35em]
-          uppercase
-          text-gray-800
-        ">
-          Diego & Susana
-        </p>
+        font-serif
+        text-base
+        sm:text-lg
+        tracking-[0.3em]
+        uppercase
+        text-gray-700
+      ">
+        Diego & Susana
+      </p>
       
       </section>
 
