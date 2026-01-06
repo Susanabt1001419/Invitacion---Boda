@@ -395,7 +395,7 @@ export default function Home() {
                 className="w-[140px] sm:w-[160px] object-contain rounded-lg border border-gray-200"
               />
               <p className="mt-3 text-xs text-gray-500">
-                Escanéalo con la cámara del celular
+                Escanéalo con tu app Bancolombia o nequi
               </p>
             </div>
       
