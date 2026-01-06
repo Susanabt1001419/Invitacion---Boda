@@ -365,11 +365,9 @@ export default function Home() {
             className="
               max-w-md
               mx-auto
-              text-gray-800
+              text-gray-700
               text-sm
               sm:text-base
-              tracking-widest
-              uppercase
               leading-relaxed
               mb-6
             "
