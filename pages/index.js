@@ -16,21 +16,20 @@ export default function Home() {
         </h1>
       </section>
 
-      {/* 🎬 VIDEO HERO */}
-      <section className="relative h-[65vh] sm:h-[70vh] bg-black">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-90"
-        >
-          <source src="/hero.mp4" type="video/mp4" />
-        </video>
-
+      {/* 🖼️ HERO CON FOTO (MISMAS DIMENSIONES DEL VIDEO) */}
+      <section className="relative h-[65vh] sm:h-[70vh] bg-black overflow-hidden">
+      
+        <img
+          src="/hero.jpg"   // cambia por el nombre real de tu foto vertical
+          alt="Susana y Diego"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      
         {/* DEGRADADO INFERIOR */}
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-beige/90 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-beige/90 to-transparent" />
+      
       </section>
+
 
       {/* 🗓️ FECHA */}
       <Section id="fecha" className="pt-6 pb-3">
