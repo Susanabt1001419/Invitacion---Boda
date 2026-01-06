@@ -362,9 +362,8 @@ export default function Home() {
         </div>
       
       </Section>
-      {/* 🎁 LLUVIA DE SOBRES */}
+      {/* 🎁 DETALLES + QR */}
       <Section id="regalos" className="pt-6 pb-12">
-      
         <div className="max-w-xl mx-auto bg-white border border-gray-200 rounded-2xl shadow-md px-6 py-8 text-center">
       
           {/* TÍTULO */}
@@ -373,37 +372,36 @@ export default function Home() {
           </h2>
       
           {/* TEXTO */}
-          <p
-            className="
-              max-w-md
-              mx-auto
-              text-gray-700
-              text-sm
-              sm:text-base
-              leading-relaxed
-              mb-6
-            "
-          >
-
-            Si desean hacernos algún detalle,
-            agradecemos que sea en forma de lluvia de sobres.
+          <p className="max-w-md mx-auto text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+            Si deseas hacernos algún detalle, agradecemos que sea en forma de lluvia de sobres,
+            ya sea de manera física o por medio del código QR que se muestra a continuación.
           </p>
       
-          {/* IMAGEN */}
-          <img
-            src="/lluvia.png"
-            alt="Lluvia de sobres"
-            className="
-              w-full
-              max-w-[120px]
-              mx-auto
-              mt-2
-              object-contain
-            "
-          />
+          {/* ICONO SOBRE + QR */}
+          <div className="flex items-center justify-center gap-6">
+      
+            {/* ICONO SOBRE (DISCRETO) */}
+            <img
+              src="/lluvia.png"
+              alt="Lluvia de sobres"
+              className="w-[90px] sm:w-[100px] object-contain"
+            />
+      
+            {/* QR */}
+            <div className="flex flex-col items-center">
+              <img
+                src="/qr.png"
+                alt="Código QR"
+                className="w-[140px] sm:w-[160px] object-contain rounded-lg border border-gray-200"
+              />
+              <p className="mt-3 text-xs text-gray-500">
+                Escanéalo con la cámara del celular
+              </p>
+            </div>
+      
+          </div>
       
         </div>
-      
       </Section>
 
       {/* ✅ CONFIRMACIÓN DE ASISTENCIA */}
