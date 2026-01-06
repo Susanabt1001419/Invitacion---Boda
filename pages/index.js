@@ -374,6 +374,7 @@ export default function Home() {
               mb-6
             "
           >
+
             Si desean hacernos algún detalle,
             agradecemos que sea en forma de lluvia de sobres.
           </p>
