@@ -9,11 +9,24 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-beige text-center font-serif">
 
-      {/* 🖋️ TÍTULO ARRIBA DEL VIDEO */}
-      <section className="pt-10 pb-6">
-        <h1 className="font-script text-4xl sm:text-5xl md:text-6xl text-gray-900 tracking-wide">
+      {/* 🖋️ TÍTULO */}
+      <section className="pt-10 pb-4 text-center">
+      
+        <h1 className="font-script text-4xl sm:text-5xl md:text-6xl text-gold mb-3">
           Nuestra boda
         </h1>
+      
+        <p className="
+          font-serif
+          text-lg
+          sm:text-xl
+          tracking-[0.35em]
+          uppercase
+          text-gray-800
+        ">
+          Diego & Susana
+        </p>
+      
       </section>
 
       {/* 🖼️ HERO CON FOTO (MISMAS DIMENSIONES DEL VIDEO) */}
