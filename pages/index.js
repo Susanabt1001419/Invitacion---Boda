@@ -20,7 +20,7 @@ export default function Home() {
       <section className="relative h-[65vh] sm:h-[70vh] bg-black overflow-hidden">
       
         <img
-          src="/hero.jpg"   // cambia por el nombre real de tu foto vertical
+          src="/hero.jpeg"   // cambia por el nombre real de tu foto vertical
           alt="Susana y Diego"
           className="absolute inset-0 w-full h-full object-cover"
         />
